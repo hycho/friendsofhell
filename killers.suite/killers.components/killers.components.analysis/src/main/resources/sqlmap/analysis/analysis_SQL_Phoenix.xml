@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD iBatis Mapper 3.0 //EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="analysisDao">
+	
+	<select id="selectAnalysisSexForServiceList" parameterType="java.util.Map"	resultType="java.util.HashMap">
+		SELECT CASE SEX WHEN '0' THEN '남성' WHEN '1' THEN '여성' ELSE '기타' END AS SEXTYPE, COUNT(*) AS TOT FROM TB_SERVICE_ANS
+  	WHERE PSERVICE = #{spackage}
+  	<if test="smethod != null and smethod != '' and smethod != 'all'">
+		AND PMETHOD = #{smethod}			
+		</if>
+		<if test="startdate != null and startdate != '' and startdate != 'all'">
+		AND STARTDATE <![CDATA[ >= ]]> #{startdate}
+		</if>
+		<if test="enddate != null and enddate != '' and enddate != 'all'">
+		AND ENDDATE <![CDATA[ <= ]]> #{enddate}
+		</if>
+  	GROUP BY SEX
+	</select>
+	
+	<select id="selectAnalysisAgeForServiceList" parameterType="java.util.Map"	resultType="java.util.HashMap">
+		SELECT SUBSTR(TO_CHAR(TO_NUMBER(SUBSTR(TO_CHAR(CURRENT_DATE()),1,4))-TO_NUMBER(BIRTHYEAR)),1,1) AS BGT, COUNT(*) AS TOT FROM TB_SERVICE_ANS
+	  WHERE PSERVICE = #{spackage}
+	  <if test="smethod != null and smethod != '' and smethod != 'all'">
+		AND PMETHOD = #{smethod}			
+		</if>
+		<if test="startdate != null and startdate != '' and startdate != 'all'">
+		AND STARTDATE <![CDATA[ >= ]]> #{startdate}
+		</if>
+		<if test="enddate != null and enddate != '' and enddate != 'all'">
+		AND ENDDATE <![CDATA[ <= ]]> #{enddate}
+		</if>
+	  GROUP BY BGT
+	</select>
+	
+	<select id="selectAnalysisTop5IdForServiceList" parameterType="java.util.Map"	resultType="java.util.HashMap">
+			SELECT USERID, COUNT(*) AS TOT FROM TB_SERVICE_ANS
+	  	WHERE PSERVICE = #{spackage}
+	  	<if test="smethod != null and smethod != '' and smethod != 'all'">
+			AND PMETHOD = #{smethod}			
+			</if>
+			<if test="startdate != null and startdate != '' and startdate != 'all'">
+			AND STARTDATE <![CDATA[ >= ]]> #{startdate}
+			</if>
+			<if test="enddate != null and enddate != '' and enddate != 'all'">
+			AND ENDDATE <![CDATA[ <= ]]> #{enddate}
+			</if>
+	  	GROUP BY USERID
+	  	ORDER BY TOT DESC
+	  	LIMIT 5
+	</select>
+	
+	<select id="selectAnalysisCountForServiceList" parameterType="java.util.Map"	resultType="java.util.HashMap">
+			SELECT LTIMEYEAR||'-'||LTIMEMONTH||'-'||LTIMEDAY AS CDATE, COUNT(*) TOT FROM TB_SERVICE_ANS
+			WHERE PSERVICE = #{spackage}
+	  	<if test="smethod != null and smethod != '' and smethod != 'all'">
+			AND PMETHOD = #{smethod}			
+			</if>
+			<if test="startdate != null and startdate != '' and startdate != 'all'">
+			AND STARTDATE <![CDATA[ >= ]]> #{startdate}
+			</if>
+			<if test="enddate != null and enddate != '' and enddate != 'all'">
+			AND ENDDATE <![CDATA[ <= ]]> #{enddate}
+			</if>
+	  	GROUP BY CDATE
+	  	ORDER BY CDATE ASC
+	</select>
+
+
+
+</mapper>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>kr.co.killers</groupId>
+    <artifactId>killers.applications</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <artifactId>killers.friendsjob</artifactId>
+  <packaging>war</packaging>
+  <name>killers.friendsjob Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <dependencies>
+   	<dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.dependency</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.configuration</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.core</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.support</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.tools</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.avro</groupId>
+      <artifactId>avro-ipc</artifactId>
+      <version>1.7.3</version>
+    </dependency>
+  </dependencies>
+  
+  <build>
+    <finalName>killers.friendsjob</finalName>
+  </build>
+</project>
