@@ -51,7 +51,7 @@ jQuery(document).ready(function($){
 <div class="wrapper row1">
   <header id="header" class="full_width clear">
     <hgroup>
-      <h1><a href="index.html">Friends Job(Global)</a></h1>
+      <h1><a href="<c:url value='/'/>">Friends Job(Global)</a></h1>
       <h2>프랜드 잡(글로벌)에 오신것을 환영합니다.</h2>
     </hgroup>
     <div id="header-contact">
@@ -65,7 +65,7 @@ jQuery(document).ready(function($){
 <!-- ################################################################################################ -->
 <div class="black" >
 <ul id="mega-menu-2" class="mega-menu" style="margin: 0 auto; max-width: 1200px;">
-	<li><a href="test.html">채용홈</a></li>
+	<li><a href="<c:url value='/'/>">채용홈</a></li>
 	<li><a href="test.html">업종별</a>
 		<ul>
 			<li><a href="#">Mobile Phones &#038; Accessories</a>
@@ -111,6 +111,36 @@ jQuery(document).ready(function($){
 	</li>
 	<li><a href="#">지역별</a>
 		<ul>
+			<li style="width:60px;">
+			<ul>
+				<li><a href="#" style="width:40px;">서울</a></li>
+				<li><a href="#" style="width:40px;">경기</a></li>
+				<li><a href="#" style="width:40px;">인천</a></li>
+				<li><a href="#" style="width:40px;">부산</a></li>
+				<li><a href="#" style="width:40px;">대구</a></li>
+				<li><a href="#" style="width:40px;">대전</a></li>
+				<li><a href="#" style="width:40px;">광주</a></li>
+				<li><a href="#" style="width:40px;">울산</a></li>
+				<li><a href="#" style="width:40px;">세종</a></li>
+			</ul>
+			</li>
+			<li style="width:60px;">
+				<ul>
+					<li><a href="#" style="width:40px;">강원</a></li>
+					<li><a href="#" style="width:40px;">경남</a></li>
+					<li><a href="#" style="width:40px;">경북</a></li>
+					<li><a href="#" style="width:40px;">전남</a></li>
+					<li><a href="#" style="width:40px;">전북</a></li>
+					<li><a href="#" style="width:40px;">충남</a></li>
+					<li><a href="#" style="width:40px;">충북</a></li>
+					<li><a href="#" style="width:40px;">제주</a></li>
+					<li><a href="#" style="width:40px;">전국</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="#">분류별</a>
+		<ul>
 			<li><a href="#">Special Offers</a>
 				<ul>
 					<li><a href="#">Offer 1</a></li>
@@ -142,34 +172,19 @@ jQuery(document).ready(function($){
 			</li>
 		</ul>
 	</li>
-	<li><a href="#">분류별</a>
-		<ul>
-			<li><a href="#">About Page 1</a></li>
-			<li><a href="#">About Page 2</a></li>
-		
-		</ul>
-	</li>
 	<li><a href="#">기업별</a>
 		<ul>
-			<li><a href="#">Service 1</a>
+			<li>
 			<ul>
 				<li><a href="#">Service Detail A</a></li>
 				<li><a href="#">Service Detail B</a></li>
 			</ul>
-		</li>
-		<li><a href="#">전체보기</a>
-			<ul>
-				<li><a href="#">Service Detail C</a></li>
-			</ul>
-		</li>
-			<li><a href="#">Service 3</a>
-			<ul>
-				<li><a href="#">Service Detail D</a></li>
-				<li><a href="#">Service Detail E</a></li>
-				<li><a href="#">Service Detail F</a></li>
-			</ul>
-		</li>
-			<li><a href="#">Service 4</a></li>
+			</li>
+			<li>
+				<ul>
+					<li><a href="#">Service Detail C</a></li>
+				</ul>
+			</li>
 		</ul>
 	</li>
 	<li><a href="#">전체보기</a>
