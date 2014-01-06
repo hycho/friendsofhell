@@ -44,7 +44,12 @@ address, article, aside, figcaption, figure, footer, header, hgroup, nav, sectio
 
 div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
 
-.row1, .row1 a{color:#C0BAB6; background-color:#333333;}
+.row0{
+	background-color:#fcfcfc;
+	height:30px;
+	border-bottom:1px solid #e6e9ed;
+}
+.row1, .row1 a{color:#919191; background-color:#FFFFFF;}
 .row2{color:#919191; background-color:#232323; border-bottom:1px solid #333333;}
 .row3{color:#666666; background-color:#FFFFFF;}
 .row4, .row4 a{color:#919191; background-color:#232323;}
@@ -64,7 +69,7 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:40px 0;}
+#header{padding:30px 0;}
 
 #header hgroup{display:block; float:left; width:auto; clear:right;}
 #header hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}
@@ -75,6 +80,23 @@ nav ul{margin:0; padding:0; list-style:none;}
 #header #header-contact ul{margin-top:15px;}
 #header #header-contact li{display:inline; margin:0 0 0 15px; padding:0 0 0 15px; border-left:1px solid #C0BAB6;}
 #header #header-contact li:first-child{margin:0; padding:0; border:none;}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+*----------------------------------------------Header-------------------------------------*/
+
+#gheader{padding:10px 0;}
+
+#gheader hgroup{display:block; float:left; width:auto; clear:right; padding-left:20px; padding-top:7px;}
+#gheader hgroup h1, #header hgroup h2{margin:0; font-weight:normal; text-transform:none;}
+#gheader hgroup h1{font-size:2em;}
+#gheader hgroup h2{font-size:1em;}
+
+#gheader #header-contact{display:block; float:right; width:auto; clear:right; padding-right:20px; padding-top:7px;}
+#gheader #header-contact ul{margin-top:0px;}
+#gheader #header-contact li{display:inline; margin:0 0 0 5px; padding:0 0 0 5px; border-left:1px solid #C0BAB6; font: 11px/15px Dotum, sans-serif;}
+#gheader #header-contact li a{color:#919191; outline:none; text-decoration:none;}
+#gheader #header-contact li:first-child{margin:0; padding:0; border:none;}
 
 /*----------------------------------------------Content Area-------------------------------------*/
 

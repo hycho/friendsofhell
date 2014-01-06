@@ -3,35 +3,202 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <html>
 <head>
-<title></title>
-
+<title>Friends Job(Global)</title>
 <link rel="stylesheet" href="<c:url value='/static/css/main.css'/>" type="text/css" />
 <link rel="stylesheet" href="<c:url value='/static/css/mediaqueries.css'/>" type="text/css" />
+<link rel="stylesheet" href="<c:url value='/static/css/dcmegamenu.css'/>" type="text/css" />
+<link rel="stylesheet" href="<c:url value='/static/css/skins/black.css'/>" type="text/css" />
+
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="<c:url value='/static/js/jquery-ui.min.js'/>"></script>
 <script type="text/javascript" src="<c:url value='/static/js/jquery-mobilemenu.min.js'/>"></script>
 <script type="text/javascript" src="<c:url value='/static/js/custom.js'/>"></script>
+<script type="text/javascript" src="<c:url value='/static/js/jquery.hoverIntent.minified.js'/>"></script>
+<script type="text/javascript" src="<c:url value='/static/js/jquery.dcmegamenu.1.3.3.js'/>"></script>
+
 <script type="text/javascript">
-jQuery(document).ready(function($){ $('img').removeAttr('width height'); });
+jQuery(document).ready(function($){
+	$('img').removeAttr('width height'); 
+	
+	$('#mega-menu-2').dcMegaMenu({
+		rowItems: '3',
+		speed: 'fast',
+		effect: 'fade',
+		event: 'click'
+	});
+});
 </script>
 </head>
-<body>
+<body style="background-color:#FFFFFF"> 
+<div class="row0" id="global_top">
+	<header id="gheader" class="full_width clear">
+	    <hgroup>
+			<span class="icon-group icon-large"></span>
+			<span>Friend Job(Global)</span>
+	    </hgroup>
+	    <div id="header-contact">
+	      <ul class="list none">
+	        <li><a href="#">로그인</a></li>
+	        <li><a href="#">회원가입</a></li>
+	        <li><a href="#">서비스안내</a></li>
+	        <li><a href="#">고객센터</a></li>
+	        <li><a href="#">이벤트</a></li>
+	      </ul>
+	    </div>
+	</header>
+</div>
 <div class="wrapper row1">
   <header id="header" class="full_width clear">
     <hgroup>
-      <h1><a href="index.html">RS-1200 Prototype 34</a></h1>
-      <h2>Free Responsive Template</h2>
+      <h1><a href="index.html">Friends Job(Global)</a></h1>
+      <h2>프랜드 잡(글로벌)에 오신것을 환영합니다.</h2>
     </hgroup>
     <div id="header-contact">
       <ul class="list none">
-        <li><span class="icon-envelope"></span> <a href="#">info@domain.com</a></li>
-        <li><span class="icon-phone"></span> +xx xxx xxxxxxxxxx</li>
+        <li><span class="icon-envelope"></span> <a href="#">kofwhgh@gmail.com</a></li>
+        <li><span class="icon-phone"></span> 010-7345-6059</li>
       </ul>
     </div>
   </header>
 </div>
 <!-- ################################################################################################ -->
+<div class="black" >
+<ul id="mega-menu-2" class="mega-menu" style="margin: 0 auto; max-width: 1200px;">
+	<li><a href="test.html">채용홈</a></li>
+	<li><a href="test.html">업종별</a>
+		<ul>
+			<li><a href="#">Mobile Phones &#038; Accessories</a>
+				<ul>
+					<li><a href="#">Product 1</a></li>
+					<li><a href="#">Product 2</a></li>
+					<li><a href="#">Product 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Desktop</a>	
+			    <ul>
+					<li><a href="#">Product 4</a></li>
+					<li><a href="#">Product 5</a></li>
+					<li><a href="#">Product 6</a></li>
+					<li><a href="#">Product 7</a></li>
+					<li><a href="#">Product 8</a></li>
+					<li><a href="#">Product 9</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Laptop</a>
+			    <ul>
+					<li><a href="#">Product 10</a></li>
+					<li><a href="#">Product 11</a></li>
+					<li><a href="#">Product 12</a></li>
+					<li><a href="#">Product 13</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Accessories</a>
+			    <ul>
+					<li><a href="#">Product 14</a></li>
+					<li><a href="#">Product 15</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Software</a>
+			  <ul>
+				<li><a href="#">Product 16</a></li>
+					<li><a href="#">Product 17</a></li>
+					<li><a href="#">Product 18</a></li>
+					<li><a href="#">Product 19</a></li>
+			  </ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="#">지역별</a>
+		<ul>
+			<li><a href="#">Special Offers</a>
+				<ul>
+					<li><a href="#">Offer 1</a></li>
+					<li><a href="#">Offer 2</a></li>
+					<li><a href="#">Offer 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Reduced Price</a>
+				<ul>
+					<li><a href="#">Offer 4</a></li>
+					<li><a href="#">Offer 5</a></li>
+					<li><a href="#">Offer 6</a></li>
+					<li><a href="#">Offer 7</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Clearance Items</a>
+				<ul>
+					<li><a href="#">Offer 9</a></li>
+			
+				</ul>
+			</li>
+			<li class="menu-item-129"><a href="#">Ex-Stock</a>
+				<ul>
+					<li><a href="#">Offer 10</a></li>
+					<li><a href="#">Offer 11</a></li>
+					<li><a href="#">Offer 12</a></li>
+					<li><a href="#">Offer 13</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href="#">분류별</a>
+		<ul>
+			<li><a href="#">About Page 1</a></li>
+			<li><a href="#">About Page 2</a></li>
+		
+		</ul>
+	</li>
+	<li><a href="#">기업별</a>
+		<ul>
+			<li><a href="#">Service 1</a>
+			<ul>
+				<li><a href="#">Service Detail A</a></li>
+				<li><a href="#">Service Detail B</a></li>
+			</ul>
+		</li>
+		<li><a href="#">전체보기</a>
+			<ul>
+				<li><a href="#">Service Detail C</a></li>
+			</ul>
+		</li>
+			<li><a href="#">Service 3</a>
+			<ul>
+				<li><a href="#">Service Detail D</a></li>
+				<li><a href="#">Service Detail E</a></li>
+				<li><a href="#">Service Detail F</a></li>
+			</ul>
+		</li>
+			<li><a href="#">Service 4</a></li>
+		</ul>
+	</li>
+	<li><a href="#">전체보기</a>
+		<ul>
+			<li><a href="#">Service 1</a>
+			<ul>
+				<li><a href="#">Service Detail A</a></li>
+				<li><a href="#">Service Detail B</a></li>
+			</ul>
+		</li>
+		<li><a href="#">전체보기</a>
+			<ul>
+				<li><a href="#">Service Detail C</a></li>
+			</ul>
+		</li>
+			<li><a href="#">Service 3</a>
+			<ul>
+				<li><a href="#">Service Detail D</a></li>
+				<li><a href="#">Service Detail E</a></li>
+				<li><a href="#">Service Detail F</a></li>
+			</ul>
+		</li>
+			<li><a href="#">Service 4</a></li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+<!-- 
 <div class="wrapper row2">
   <nav id="topnav">
     <ul class="clear">
@@ -99,6 +266,7 @@ jQuery(document).ready(function($){ $('img').removeAttr('width height'); });
     </ul>
   </nav>
 </div>
+-->
 <!-- content -->
 <div class="wrapper row3">
   <div id="container">
