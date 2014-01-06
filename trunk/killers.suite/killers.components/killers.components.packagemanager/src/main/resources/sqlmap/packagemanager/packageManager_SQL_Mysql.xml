@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD iBatis Mapper 3.0 //EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="packageManagerDao">
+	
+	<select id="selectPackageManagerList" parameterType="java.util.Map"	resultType="java.util.HashMap">
+		SELECT PACKAGEID,SERVICEID,PACKAGENAME,SERVICENAME,UPDATEDDATE
+		FROM TB_PACKAGE_SERVICE
+	</select>
+	
+	<select id="selectPackageList" parameterType="java.util.Map"	resultType="java.util.HashMap">
+		SELECT PACKAGEID, MAX(PACKAGENAME) AS PACKAGENAME
+		FROM TB_PACKAGE_SERVICE
+		GROUP BY PACKAGEID;
+	</select>
+	
+	<select id="selectServiceToPackageList" parameterType="java.util.Map"	resultType="java.util.HashMap">
+		SELECT "all" AS SERVICEID,"ALL" AS SERVICENAME
+		UNION
+		SELECT SERVICEID,SERVICENAME
+		FROM TB_PACKAGE_SERVICE
+		WHERE PACKAGEID = #{PACKAGEID}
+	</select>
+
+	<insert id="updatePackageManager" parameterType="java.util.Map">
+	  <![CDATA[
+	  	UPDATE TB_PACKAGE_SERVICE 
+			SET PACKAGENAME = #{PACKAGENAME},	SERVICENAME = #{SERVICENAME}
+			WHERE PACKAGEID = #{PACKAGEID} AND SERVICEID = #{SERVICEID}
+	     ]]>
+	</insert>
+	
+	<select id="selectPackageManagerListTotCnt" parameterType="java.util.Map"	resultType="int">
+		SELECT COUNT(*)
+		FROM TB_PACKAGE_SERVICE
+	</select>
+</mapper>
