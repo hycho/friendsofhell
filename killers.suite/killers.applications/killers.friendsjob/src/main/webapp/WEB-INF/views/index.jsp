@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 	$('img').removeAttr('width height'); 
 	
 	$('#mega-menu-2').dcMegaMenu({
-		rowItems: '3',
+		rowItems: '4',
 		speed: 'fast',
 		effect: 'fade',
 		event: 'click'
@@ -56,6 +56,7 @@ jQuery(document).ready(function($){
     </hgroup>
     <div id="header-contact">
       <ul class="list none">
+      	<li><input type="text" value="검색하세요." size="30" class="search_input1"/><a href="#" class="button small gradient white" style="margin-left:5px;">검색</a></li>
         <li><span class="icon-envelope"></span> <a href="#">kofwhgh@gmail.com</a></li>
         <li><span class="icon-phone"></span> 010-7345-6059</li>
       </ul>
@@ -68,43 +69,100 @@ jQuery(document).ready(function($){
 	<li><a href="<c:url value='/'/>">채용홈</a></li>
 	<li><a href="test.html">업종별</a>
 		<ul>
-			<li><a href="#">Mobile Phones &#038; Accessories</a>
+			<li><a href="#">경영∙사무</a>
 				<ul>
-					<li><a href="#">Product 1</a></li>
-					<li><a href="#">Product 2</a></li>
-					<li><a href="#">Product 3</a></li>
+					<li><a href="#">기획∙전략∙경영</a></li>
+					<li><a href="#">인사∙노무∙교육</a></li>
+					<li><a href="#">재무∙세무∙IR</a></li>
+					<li><a href="#">사무보조∙문서작성</a></li>
+					<li><a href="#">사무∙총무∙법무</a></li>
+					<li><a href="#">경리∙회계∙결산</a></li>
+					<li><a href="#">비서∙인포메이션</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Desktop</a>	
+			<li><a href="#">마케팅∙무역∙유통</a>	
 			    <ul>
-					<li><a href="#">Product 4</a></li>
-					<li><a href="#">Product 5</a></li>
-					<li><a href="#">Product 6</a></li>
-					<li><a href="#">Product 7</a></li>
-					<li><a href="#">Product 8</a></li>
-					<li><a href="#">Product 9</a></li>
+					<li><a href="#">마케팅∙광고</a></li>
+					<li><a href="#">홍보∙PR</a></li>
+					<li><a href="#">구매∙자재</a></li>
+					<li><a href="#">배송∙운전∙택배</a></li>
+					<li><a href="#">상품기획∙MD</a></li>
+					<li><a href="#">무역∙해외영업</a></li>
+					<li><a href="#">유통∙물류∙재고</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Laptop</a>
+			<li><a href="#">영업∙고객상담</a>
 			    <ul>
-					<li><a href="#">Product 10</a></li>
-					<li><a href="#">Product 11</a></li>
-					<li><a href="#">Product 12</a></li>
-					<li><a href="#">Product 13</a></li>
+					<li><a href="#">제품∙서비스영업</a></li>
+					<li><a href="#">기술영업</a></li>
+					<li><a href="#">법인영업</a></li>
+					<li><a href="#">채권∙심사</a></li>
+					<li><a href="#">부동산∙창업</a></li>
+					<li><a href="#">단순홍보∙회원관리</a></li>
+					<li><a href="#">아웃바운드TM</a></li>
+					<!-- <li><a href="#">금융∙보험영업</a></li>
+					<li><a href="#">광고영업</a></li>
+					<li><a href="#">영업관리∙지원</a></li>
+					<li><a href="#">판매∙캐셔∙매장관리</a></li>
+					<li><a href="#">이벤트∙웨딩∙나레이터</a></li>
+					<li><a href="#">교육상담∙학원관리</a></li>
+					<li><a href="#">고객센터∙인바운드∙CS</a></li> -->
 				</ul>
 			</li>
-			<li><a href="#">Accessories</a>
+			<li><a href="#">IT∙인터넷</a>
 			    <ul>
-					<li><a href="#">Product 14</a></li>
-					<li><a href="#">Product 15</a></li>
+					<li><a href="#">웹기획∙웹마케팅∙PM</a></li>
+					<li><a href="#">웹프로그래머</a></li>
+					<li><a href="#">시스템프로그래머</a></li>
+					<li><a href="#">네트워크∙서버∙보안∙DBA</a></li>
+					<li><a href="#">HTML∙웹표준∙컨텐츠관리</a></li>
+					<li><a href="#">QA∙테스터∙검증</a></li>
+					<li><a href="#">웹디자인</a></li>
+					<!-- <li><a href="#">응용프로그래머</a></li>
+					<li><a href="#">SE∙시스템분석∙설계</a></li>
+					<li><a href="#">IT∙디자인∙컴퓨터강사</a></li>
+					<li><a href="#">웹사이트운영</a></li> -->
 				</ul>
 			</li>
-			<li><a href="#">Software</a>
+			<li><a href="#">연구개발∙설계</a>
 			  <ul>
-				<li><a href="#">Product 16</a></li>
-					<li><a href="#">Product 17</a></li>
-					<li><a href="#">Product 18</a></li>
-					<li><a href="#">Product 19</a></li>
+				<li><a href="#">자동차∙조선∙기계</a></li>
+				<li><a href="#">화악∙에너지∙환경 식품</a></li>
+				<li><a href="#">기계설계∙CAD∙CAM</a></li>
+				<li><a href="#">통신기술∙네트워크구축</a></li>
+				<li><a href="#">반도체∙디스플레이</a></li>
+				<li><a href="#">전기∙전자∙제어</a></li>
+				<li><a href="#">건설∙설계∙인테리어</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">생산∙제조</a>
+			  <ul>
+				<li><a href="#">생산∙제조∙설비∙조립</a></li>
+				<li><a href="#">생산관리∙공정관리∙품질관리</a></li>
+				<li><a href="#">설치∙정비∙A/S</a></li>
+				<li><a href="#">포장∙가공∙검사</a></li>
+				<li><a href="#">시공∙현장∙공무</a></li>
+				<li><a href="#">시설∙빌딩∙안전</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">전문∙특수직</a>
+			  <ul>
+				<li><a href="#">경여분석∙컨설턴트</a></li>
+				<li><a href="#">회계∙세무</a></li>
+				<li><a href="#">외국어∙번역∙통역</a></li>
+				<li><a href="#">학습지∙방문교사</a></li>
+				<li><a href="#">뷰티미용∙애완∙스포츠</a></li>
+				<li><a href="#">보안∙경비∙경호</a></li>
+			  </ul>
+			</li>
+			<li><a href="#">디자인</a>
+			  <ul>
+				<li><a href="#">그래픽디자인∙CG</a></li>
+				<li><a href="#">제품∙산업디자인</a></li>
+				<li><a href="#">건축∙인테리어디자인</a></li>
+				<li><a href="#">캐릭터∙에니메이션</a></li>
+				<li><a href="#">출판∙편집디자인</a></li>
+				<li><a href="#">광고∙시각디자인</a></li>
 			  </ul>
 			</li>
 		</ul>
@@ -140,76 +198,60 @@ jQuery(document).ready(function($){
 		</ul>
 	</li>
 	<li><a href="#">분류별</a>
-		<ul>
-			<li><a href="#">Special Offers</a>
+		<ul style="width:220px;">
+			<li style="width:100px;">
 				<ul>
-					<li><a href="#">Offer 1</a></li>
-					<li><a href="#">Offer 2</a></li>
-					<li><a href="#">Offer 3</a></li>
+					<li><a href="#" style="width:80px;">직급∙경력별</a></li>
+					<li><a href="#" style="width:80px;">인턴직</a></li>
+					<li><a href="#" style="width:80px;">우대조건별</a></li>
+					<li><a href="#" style="width:80px;">복리후생별</a></li>
+					<li><a href="#" style="width:80px;">석박사급</a></li>
+					<li><a href="#" style="width:80px;">전공계열별</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Reduced Price</a>
+			<li style="width:100px;">
 				<ul>
-					<li><a href="#">Offer 4</a></li>
-					<li><a href="#">Offer 5</a></li>
-					<li><a href="#">Offer 6</a></li>
-					<li><a href="#">Offer 7</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Clearance Items</a>
-				<ul>
-					<li><a href="#">Offer 9</a></li>
-			
-				</ul>
-			</li>
-			<li class="menu-item-129"><a href="#">Ex-Stock</a>
-				<ul>
-					<li><a href="#">Offer 10</a></li>
-					<li><a href="#">Offer 11</a></li>
-					<li><a href="#">Offer 12</a></li>
-					<li><a href="#">Offer 13</a></li>
+					<li><a href="#" style="width:80px;">외국어별</a></li>
+					<li><a href="#" style="width:80px;">자격증별</a></li>
+					<li><a href="#" style="width:80px;">병역특례</a></li>
+					<li><a href="#" style="width:80px;">생생인담톡</a></li>
+					<li><a href="#" style="width:80px;">포토 채용정보</a></li>
+					<li><a href="#" style="width:80px;">동영상 채용관</a></li>
 				</ul>
 			</li>
 		</ul>
 	</li>
 	<li><a href="#">기업별</a>
-		<ul>
-			<li>
-			<ul>
-				<li><a href="#">Service Detail A</a></li>
-				<li><a href="#">Service Detail B</a></li>
-			</ul>
-			</li>
-			<li>
+		<ul style="width:260px;">
+			<li style="width:120px;">
 				<ul>
-					<li><a href="#">Service Detail C</a></li>
+					<li><a href="#" style="width:100px;">대기업</a></li>
+					<li><a href="#" style="width:100px;">주권상장기업</a></li>
+					<li><a href="#" style="width:100px;">코스닥 상장기업</a></li>
+					<li><a href="#" style="width:100px;">밴처기업</a></li>
+					<li><a href="#" style="width:100px;">강소기업</a></li>
+					<li><a href="#" style="width:100px;">우수중소기업</a></li>
+				</ul>
+			</li>
+			<li style="width:120px;">
+				<ul>
+					<li><a href="#" style="width:100px;">외국계기업</a></li>
+					<li><a href="#" style="width:100px;">공공기관∙공사협회</a></li>
+					<li><a href="#" style="width:100px;">소속협회별</a></li>
+					<li><a href="#" style="width:100px;">공무원∙공직</a></li>
+					<li><a href="#" style="width:100px;">블루칩채용관</a></li>
 				</ul>
 			</li>
 		</ul>
 	</li>
-	<li><a href="#">전체보기</a>
+	<!-- <li><a href="#">전체보기</a>
 		<ul>
-			<li><a href="#">Service 1</a>
+			<li><a href="#">개발중 입니다.</a>
 			<ul>
-				<li><a href="#">Service Detail A</a></li>
-				<li><a href="#">Service Detail B</a></li>
+				<li><a href="#">개발 중 입니다.</a></li>
 			</ul>
 		</li>
-		<li><a href="#">전체보기</a>
-			<ul>
-				<li><a href="#">Service Detail C</a></li>
-			</ul>
-		</li>
-			<li><a href="#">Service 3</a>
-			<ul>
-				<li><a href="#">Service Detail D</a></li>
-				<li><a href="#">Service Detail E</a></li>
-				<li><a href="#">Service Detail F</a></li>
-			</ul>
-		</li>
-			<li><a href="#">Service 4</a></li>
-		</ul>
-	</li>
+	</li>-->
 </ul>
 </div>
 
@@ -218,34 +260,58 @@ jQuery(document).ready(function($){
   <div id="container">
     <!-- ################################################################################################ -->
     <div id="homepage" class="clear">
-      <section class="center clear">
-        <div class="push30"><img src="/friendsjob/static/images/demo/1200x400.gif" alt=""></div>
-        <h1 class="emphasise nospace">Vestibulum adipiscing erat sit amet justo</h1>
-        <p class="font-medium">Integer imperdiet vestibulum leo ut tincidunt. In sagittis diam ut leo convallis vel rutrum mauris ullamcorper vestibulum adipiscing erat sit amet.</p>
-        <p><a href="#" class="button medium gradient orange rnd5">Integer imperdiet vestibulum &raquo;</a></p>
-      </section>
-      <div class="divider2"></div>
       <!-- ################################################################################################ -->
       <section class="clear">
-        <article class="one_third first">
-          <h2>Headline Text</h2>
-          <p>Integer imperdiet vestibulum leo ut tincidunt. In sagittis diam ut leo convallis vel rutrum mauris ullamcorper. Vestibulum adipiscing erat sit amet justo luctus molestie.</p>
-          <footer class="read-more"><a href="#">Read More &raquo;</a></footer>
+      	<p class="title_n">Grand master 채용정보</p>
+        <article class="one_third1 first" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
         </article>
-        <article class="one_third">
-          <h2>Headline Text</h2>
-          <p>Integer imperdiet vestibulum leo ut tincidunt. In sagittis diam ut leo convallis vel rutrum mauris ullamcorper. Vestibulum adipiscing erat sit amet justo luctus molestie.</p>
-          <footer class="read-more"><a href="#">Read More &raquo;</a></footer>
+        <article class="one_third1" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
         </article>
-        <article class="one_third">
-          <h2>Headline Text</h2>
-          <p>Integer imperdiet vestibulum leo ut tincidunt. In sagittis diam ut leo convallis vel rutrum mauris ullamcorper. Vestibulum adipiscing erat sit amet justo luctus molestie.</p>
-          <footer class="read-more"><a href="#">Read More &raquo;</a></footer>
+        <article class="one_third1" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
+        </article>
+        <article class="one_third1 first" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
+        </article>
+        <article class="one_third1" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
+        </article>
+        <article class="one_third1" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
+        </article>
+        <article class="one_third1 first" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
+        </article>
+        <article class="one_third1" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
+        </article>
+        <article class="one_third1" style="border: 1px solid #E5E4E3; cursor:pointer; padding:5px 5px 5px 5px">
+          <p style="text-align: center;">
+          	<img style="text-align:center" src="http://ads.jobkorea.co.kr/RealMedia/ads/Creatives/OasDefault/131230_jk_kotra_mm/kotra131230.gif" alt="">
+          </p>
         </article>
       </section>
       <div class="divider2"></div>
       <section class="last">
-        <h2>등록 기업</h2>
+        <p class="title_n">Grand 채용정보</p>
         <ul class="nospace clear">
           <li class="one_sixth first">
             <figure class="team-member"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
@@ -398,10 +464,9 @@ jQuery(document).ready(function($){
         </ul>
       </section>
     </div>
-    
     <div class="divider2"></div>
-      <section class="last">
-        <h2>등록 기업2</h2>
+    <section class="last">
+        <p class="title_n">Power 채용정보</p>
         <ul class="nospace clear rectpadding_first_5">
           <li class="one_100 first">
             <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
@@ -649,9 +714,11 @@ jQuery(document).ready(function($){
           </li>
         </ul>
       </section>
+      <div class="divider2"></div>
+      <section>
       <ul class="nospace clear">
 		<li class="two_quarter first">
-			<h2>등록기업3</h2>
+			<p class="title_n">Soft 채용정보</p>
 			<ul class="list underline">
 			  <li>
 			  	<p class="team-name">Name Goes Here</p>
@@ -665,7 +732,7 @@ jQuery(document).ready(function($){
 			<code class="code">&lt;ul class="list underline"&gt;</code>
 		</li>      
 		<li class="two_quarter">
-			<h2>등록기업4</h2>
+			<p class="title_n">Soft 채용정보</p>
 			<ul class="list underline">
 			  <li>Nullam congue odio</li>
 			  <li>Quisque faucibus cursus</li>
@@ -675,6 +742,7 @@ jQuery(document).ready(function($){
 			<code class="code">&lt;ul class="list underline"&gt;</code>
 		</li>
       </ul>
+      </section>
     </div>
     
     <!-- ################################################################################################ -->
