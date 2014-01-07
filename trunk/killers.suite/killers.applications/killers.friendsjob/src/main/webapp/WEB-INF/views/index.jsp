@@ -649,6 +649,32 @@ jQuery(document).ready(function($){
           </li>
         </ul>
       </section>
+      <ul class="nospace clear">
+		<li class="two_quarter first">
+			<h2>등록기업3</h2>
+			<ul class="list underline">
+			  <li>
+			  	<p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+				<p style="float:right;margin-top:-30px;">test</p>                
+              </li>
+			  <li>Quisque faucibus cursus</li>
+			  <li>Integer eget nisi dolor</li>
+			  <li>Sed consectetur neque</li>
+			</ul>
+			<code class="code">&lt;ul class="list underline"&gt;</code>
+		</li>      
+		<li class="two_quarter">
+			<h2>등록기업4</h2>
+			<ul class="list underline">
+			  <li>Nullam congue odio</li>
+			  <li>Quisque faucibus cursus</li>
+			  <li>Integer eget nisi dolor</li>
+			  <li>Sed consectetur neque</li>
+			</ul>
+			<code class="code">&lt;ul class="list underline"&gt;</code>
+		</li>
+      </ul>
     </div>
     
     <!-- ################################################################################################ -->
