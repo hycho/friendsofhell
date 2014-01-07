@@ -244,7 +244,6 @@ jQuery(document).ready(function($){
         </article>
       </section>
       <div class="divider2"></div>
-      
       <section class="last">
         <h2>등록 기업</h2>
         <ul class="nospace clear">
@@ -398,12 +397,263 @@ jQuery(document).ready(function($){
           </li>
         </ul>
       </section>
-      
     </div>
+    
+    <div class="divider2"></div>
+      <section class="last">
+        <h2>등록 기업2</h2>
+        <ul class="nospace clear rectpadding_first_5">
+          <li class="one_100 first">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <ul class="nospace clear rectpadding_normal_5">
+          <li class="one_100 first">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption style="background-color:#f1fde3;">
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <ul class="nospace clear rectpadding_last_5">
+          <li class="one_100 first">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption style="background-color:#f1fde3;">
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="one_100">
+            <figure class="team-member1"><img src="/friendsjob/static/images/demo/team-member.gif" alt="">
+              <figcaption>
+                <p class="team-name">Name Goes Here</p>
+                <p class="team-title">Job Title Here</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </div>
+    
     <!-- ################################################################################################ -->
     <div class="clear"></div>
   </div>
-</div>
 <!-- Footer -->
 <div class="wrapper row2">
   <div id="footer" class="clear">
