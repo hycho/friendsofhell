@@ -12,6 +12,8 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 .one_fifth, .two_fifth, .three_fifth, .four_fifth, 
 .one_sixth, .two_sixth, .three_sixth, .four_sixth, .five_sixth{display:inline; float:left; margin:0 0 0 5%; list-style:none;}
 
+.one_100{display:inline; float:left; margin:0 0 0 2px; list-style:none;}
+
 .one_half:first-child, 
 .one_third:first-child, .two_third:first-child, 
 .one_quarter:first-child, .two_quarter:first-child, .three_quarter:first-child, 
@@ -140,6 +142,10 @@ body.boxed .wrapper{max-width:90%; padding:0 1.6%; margin:0 auto;}
 
 /*----------------------------------------------Spacing Elements-------------------------------------*/
 
+.one_100{width:117px;}
+
+/*----------------------------------------------Spacing Elements-------------------------------------*/
+
 .stretched{display:block; margin:0 auto;}
 body.boxed .wrapper .stretched{margin-left:-1.8%; margin-right:-1.8%;}
 
@@ -147,6 +153,12 @@ body.boxed .wrapper .stretched{margin-left:-1.8%; margin-right:-1.8%;}
 ul.nospace, ol.nospace{list-style:none;}
 .nospace.spacing li{margin-bottom:25px;}
 .nospace.spacing li:last-child{margin-bottom:0;}
+
+.rectpadding_first_5 {padding:5px 5px 2px 6px;background-color:#89c85a}
+.rectpadding_normal_5 {padding:0px 5px 2px 6px;background-color:#89c85a}
+.rectpadding_last_5 {padding:0px 5px 5px 6px;background-color:#89c85a}
+
+
 
 .push10{margin-bottom:10px;}
 .push15{margin-bottom:15px;}

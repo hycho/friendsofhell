@@ -53,10 +53,17 @@ Licence: <a href="http://www.os-templates.com/template-terms">Website Template L
 
 /*----------------------------------------------About Us-------------------------------------*/
 
-figure.team-member figcaption p{margin:15px 0 0 0; padding:0;}
+figure.team-member figcaption p{margin:15px 0 0 0; padding:0}
 figure.team-member figcaption .team-name{font-weight:bold;}
 figure.team-member figcaption .team-title{margin:0 0 15px 0; font-size:11px; line-height:normal;}
 figure.team-member figcaption .team-description{margin:0; padding-top:15px; border-top:1px solid #E5E4E3;}
+
+/*----------------------------------------------Main Figure1 team-member1 (one_100 using) -------------------------------------*/
+
+figure.team-member1 figcaption p{margin:0 0 0 0; padding:0;background-color:#f1fde3;}
+figure.team-member1 figcaption .team-name{font-weight:bold;}
+figure.team-member1 figcaption .team-title{margin:0 0 0 0; font-size:11px; line-height:normal;}
+figure.team-member1 figcaption .team-description{margin:0; padding-top:15px; border-top:1px solid #E5E4E3;}
 
 /*----------------------------------------------Testimonials-------------------------------------*/
 
