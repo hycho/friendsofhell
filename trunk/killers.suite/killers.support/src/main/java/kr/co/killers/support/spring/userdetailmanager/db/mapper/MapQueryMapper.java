@@ -1,4 +1,4 @@
-package kr.co.killers.support.spring.userdetailmanager.db.mapper;
+package com.harpy.support.spring.security.customAuth.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -6,12 +6,15 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.sql.DataSource;
-import kr.co.killers.support.spring.userdetailmanager.db.MappingSqlQuery;
-import kr.co.killers.support.spring.userdetailmanager.db.UserMapDetailsModel;
-import kr.co.killers.support.utils.CommonUtil;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
+import com.harpy.support.spring.security.customAuth.MappingSqlQuery;
+import com.harpy.support.spring.security.customAuth.UserMapDetailsModel;
+import com.harpy.utils.CommonUtil;
 
 public class MapQueryMapper extends MappingSqlQuery {
 	
