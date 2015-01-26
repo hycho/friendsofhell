@@ -33,7 +33,7 @@ public class SampleController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "index";
 	}
 
 	// sample page
