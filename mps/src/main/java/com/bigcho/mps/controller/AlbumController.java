@@ -1,9 +1,6 @@
 package com.bigcho.mps.controller;
 
-import java.util.Locale;
-
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -11,8 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/album")
 public class AlbumController {
 	
+	/**
+	 * 리스트 페이지로 이동합니다.
+	 * @param locale
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
+	public String list() {
 		return "/album/list";
 	}
 	
