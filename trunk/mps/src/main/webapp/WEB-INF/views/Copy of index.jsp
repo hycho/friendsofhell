@@ -25,47 +25,6 @@
         <link href="${resourcePath}/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
         <link href="${resourcePath}/css/AdminLTE.css" rel="stylesheet" type="text/css" />
-        
-        <!-- init Script -->
-        <script type="text/javascript">
-	        if (!window.mps) {
-	        	window.mps = {
-	        		contextPath : '${contextPath}',
-	        		resourcePath : '${resourcePath}'
-	        	}
-	        }
-        </script>
-        
-        <!-- add new calendar event modal -->
-        <script src="${resourcePath}/js/plugins/jquery/jquery-2.1.3.min.js" type="text/javascript"></script>
-        <script src="${resourcePath}/js/plugins/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-        <script src="${resourcePath}/js/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
-        
-        <!-- angular Js -->
-        <script src="${resourcePath}/js/plugins/angularjs/angular.min-1.3.8.js" type="text/javascript"></script>
-        <script src="${resourcePath}/js/plugins/angularjs/angular-resource.js" type="text/javascript"></script>
-        <script src="${resourcePath}/js/plugins/angularjs/angular-route.js" type="text/javascript"></script>
-        
-        <!-- Morris.js charts -->
-        <script src="${resourcePath}/js/plugins/raphael/raphael-min.js"></script>
-        <script src="${resourcePath}/js/plugins/morris/morris.min.js" type="text/javascript"></script>
-        <!-- Sparkline -->
-        <script src="${resourcePath}/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
-        <!-- jvectormap -->
-        <script src="${resourcePath}/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
-        <script src="${resourcePath}/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
-        <!-- jQuery Knob Chart -->
-        <script src="${resourcePath}/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
-        <!-- daterangepicker -->
-        <script src="${resourcePath}/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
-        <!-- datepicker -->
-        <script src="${resourcePath}/js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
-        <!-- Bootstrap WYSIHTML5 -->
-        <script src="${resourcePath}/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
-        <!-- iCheck -->
-        <script src="${resourcePath}/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
-        <!-- app -->
-        <script src="${resourcePath}/js/app.js" type="text/javascript"></script>
     </head>
     <body class="skin-blue" ng-controller="mpsCtrl">
         <!-- header logo: style can be found in header.less -->
@@ -439,7 +398,6 @@
 
             <!-- Right side column. Contains the navbar and content of the page -->
             <aside class="right-side">
-            <ng-view></ng-view>
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
@@ -904,5 +862,35 @@
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
+
+        <!-- add new calendar event modal -->
+        <script src="${resourcePath}/js/plugins/jquery/jquery-2.1.3.min.js"></script>
+        <script src="${resourcePath}/js/plugins/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+        <script src="${resourcePath}/js/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        
+        <!-- angular Js -->
+        <script src="${resourcePath}/js/plugins/angularjs/angular.min-1.3.8.js" type="text/javascript"></script>
+        <script src="${resourcePath}/js/plugins/angularjs/angular-route.js" type="text/javascript"></script>
+        
+        <!-- Morris.js charts -->
+        <script src="${resourcePath}/js/plugins/raphael/raphael-min.js"></script>
+        <script src="${resourcePath}/js/plugins/morris/morris.min.js" type="text/javascript"></script>
+        <!-- Sparkline -->
+        <script src="${resourcePath}/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+        <!-- jvectormap -->
+        <script src="${resourcePath}/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+        <script src="${resourcePath}/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+        <!-- jQuery Knob Chart -->
+        <script src="${resourcePath}/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
+        <!-- daterangepicker -->
+        <script src="${resourcePath}/js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+        <!-- datepicker -->
+        <script src="${resourcePath}/js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>
+        <!-- Bootstrap WYSIHTML5 -->
+        <script src="${resourcePath}/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
+        <!-- iCheck -->
+        <script src="${resourcePath}/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <!-- app -->
+        <script src="${resourcePath}/js/app.js" type="text/javascript"></script>
     </body>
 </html>
