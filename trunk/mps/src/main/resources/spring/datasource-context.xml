@@ -28,9 +28,9 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="jpaProperties">
 			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop> <!-- Mysql 형식에 맞게 변환해주는 클래스 -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop><!-- Mysql 형식에 맞게 변환해주는 클래스 -->
 				<prop key="hibernate.connection.pool_size">1</prop>
-				<prop key="hibernate.connection.shutdown">true</prop> <!-- hsql에 있는 마지막 연결이 끊어지면 데이터베이스 shutdown 하는 플래그 -->
+				<prop key="hibernate.connection.shutdown">true</prop><!-- hsql에 있는 마지막 연결이 끊어지면 데이터베이스 shutdown 하는 플래그 -->
 				<prop key="hibernate.show_sql">true</prop> <!-- SQL 출력 -->
 				<prop key="hibernate.hbm2ddl.auto">create</prop> <!-- 테이블 자동 생성 -->
 			</props>
