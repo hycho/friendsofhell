@@ -16,7 +16,7 @@ choutubeApp.config( function ($httpProvider) {
 // Service
 choutubeApp.service('VideosService', ['$window', '$rootScope', '$log', function ($window, $rootScope, $log) {
 	var service = this;
-
+	
 	var youtube = {
 	    ready: false,
 	    player: null,
@@ -25,19 +25,14 @@ choutubeApp.service('VideosService', ['$window', '$rootScope', '$log', function 
 	    videoTitle: null,
 	    playerHeight: '480',
 	    playerWidth: '640',
-	    state: 'stopped'
+	    state: 'stopped',
+	    playIdx : 0
 	};
   
 	var results = [];
 	  
 	var upcoming = [
-	    /*{id: 'kRJuY6ZDLPo', title: 'La Roux - In for the Kill (Twelves Remix)'},
-	    {id: '45YSGFctLws', title: 'Shout Out Louds - Illusions'},
-	    {id: 'ktoaj1IpTbw', title: 'CHVRCHES - Gun'},
-	    {id: '8Zh0tY2NfLs', title: 'N.E.R.D. ft. Nelly Furtado - Hot N\' Fun (Boys Noize Remix) HQ'},
-	    {id: 'zwJPcRtbzDk', title: 'Daft Punk - Human After All (SebastiAn Remix)'},
-	    {id: 'sEwM6ERq0gc', title: 'HAIM - Forever (Official Music Video)'},
-	    {id: 'fTK4XTvZWmk', title: 'Housse De Racket â˜â˜€â˜ Apocalypso'}*/
+	    //{id: 'kRJuY6ZDLPo', title: 'La Roux - In for the Kill (Twelves Remix)'}
 	];
   
 	var history = [
@@ -60,19 +55,32 @@ choutubeApp.service('VideosService', ['$window', '$rootScope', '$log', function 
 	}
 
 	function onYoutubeStateChange (event) {
+		console.log(upcoming.length);
 	    if (event.data == YT.PlayerState.PLAYING) {
 	    	youtube.state = 'playing';
 	    } else if (event.data == YT.PlayerState.PAUSED) {
 	    	youtube.state = 'paused';
 	    } else if (event.data == YT.PlayerState.ENDED) {
 		    youtube.state = 'ended';
-		    service.launchPlayer(upcoming[0].id, upcoming[0].title);
-		    service.archiveVideo(upcoming[0].id, upcoming[0].title);
-		    service.deleteVideo(upcoming, upcoming[0].id);
+		    nextPlay();
 	    }
-	    
 	    $rootScope.$apply();
 	}
+	
+	function nextPlay() {
+		if(upcoming.length <= ++youtube.playIdx) {
+			youtube.playIdx = 0;
+		}
+
+		service.launchPlayer(upcoming[youtube.playIdx].id, upcoming[youtube.playIdx].title);
+	    service.archiveVideo(upcoming[youtube.playIdx].id, upcoming[youtube.playIdx].title);
+	    
+	    $rootScope.$broadcast("VideosController::selTitle", youtube.playIdx);
+	};
+	
+	function sufflePlay() {
+		
+	};
 
 	this.bindPlayer = function (elementId) {
 		$log.info('Binding to ' + elementId);
@@ -172,11 +180,20 @@ choutubeApp.service('VideosService', ['$window', '$rootScope', '$log', function 
 
 choutubeApp.controller('VideosController', function ($scope, $http, $log, VideosService) {
 	$scope.query = 'you got it';
+	$scope.sels = {
+		selTitleIdx : -1
+	};
 	
-    $scope.launch = function (id, title) {
+	$scope.$on("VideosController::selTitle", function(event, idx) {
+		$scope.sels.selTitleIdx = idx;
+	});
+	
+    $scope.launch = function (id, title, idx) {
       VideosService.launchPlayer(id, title);
       VideosService.archiveVideo(id, title);
-      VideosService.deleteVideo($scope.upcoming, id);
+      //VideosService.deleteVideo($scope.upcoming, id);
+      VideosService.getYoutube().playIdx = idx;
+      
       $log.info('Launched id:' + id + ' and title:' + title);
     };
 
