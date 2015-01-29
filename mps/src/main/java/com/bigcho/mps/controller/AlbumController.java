@@ -19,4 +19,15 @@ public class AlbumController {
 		return "/album/list";
 	}
 	
+	/**
+	 * 리스트 페이지로 이동합니다.
+	 * @param locale
+	 * @param model
+	 * @return
+	 */
+	@RequestMapping(value = "/choutube", method = RequestMethod.GET)
+	public String choutube() {
+		return "/album/choutube";
+	}
+	
 }

@@ -66,6 +66,10 @@
         <script src="${resourcePath}/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
         <!-- app -->
         <script src="${resourcePath}/js/app.js" type="text/javascript"></script>
+        <script src="${resourcePath}/js/album/albumController.js" type="text/javascript"></script>
+        <script src="${resourcePath}/js/common/asyncHttpModule.js" type="text/javascript"></script>
+        
+        
     </head>
     <body class="skin-blue" ng-controller="mpsCtrl">
         <!-- header logo: style can be found in header.less -->
@@ -103,7 +107,6 @@
                         </div>
                         <div class="pull-left info">
                             <p>Hello, Jane</p>
-
                             <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                         </div>
                     </div>
@@ -119,14 +122,19 @@
                     <!-- /.search form -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
-                    	<li class="active">
-                            <a href="${contextPath}/album/list">
-                                <i class="fa fa-laptop"></i> <span>Album</span>
+                        <li class="active">
+                            <a href="${contextPath}/dashboard/main">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                             </a>
                         </li>
                         <li class="active">
-                            <a href="index.html">
-                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            <a href="#" ng-click="moveChoutube()">
+                                <i class="fa fa-laptop"></i> <span>Choutube</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="${contextPath}/album/list">
+                                <i class="fa fa-laptop"></i> <span>Album</span>
                             </a>
                         </li>
                         <li>
@@ -212,7 +220,6 @@
                 </section>
                 <!-- /.sidebar -->
             </aside>
-
             <!-- Right side column. Contains the navbar and content of the page -->
             <aside class="right-side">
 	            <ng-view></ng-view>
