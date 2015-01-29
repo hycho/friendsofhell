@@ -11,7 +11,8 @@ mpsApp.config(function($routeProvider, $locationProvider) {
 	});
 	
 	$routeProvider.otherwise({
-		templateUrl: '/'
+		//templateUrl: window.mps.contextPath + '/dashboard/main'
+		templateUrl: window.mps.contextPath + '/album/list'
 	});
 });
 
