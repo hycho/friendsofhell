@@ -7,7 +7,7 @@
 <html data-ng-app="choutubeApp">
 <head>
 <meta charset="utf-8">
-<title>JukeTube</title>
+<title>ChouTube</title>
 <meta name="author" content="J. Thomas">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -44,7 +44,7 @@
 		<ol id="upcoming" data-ng-show="playlist">
 			<li data-ng-repeat="video in upcoming">
 				<p class="item-delete" data-ng-click="delete('upcoming', video.id)">delete</p>
-				<p class="item-title" data-ng-click="launch(video.id, video.title)">{{video.title}}</p>
+				<p class="item-title" ng-class="{'selected': $index==sels.selTitleIdx}" data-ng-click="launch(video.id, video.title, $index); sels.selTitleIdx = $index">{{video.title}}</p>
 			</li>
 		</ol>
 		<ol id="history" data-ng-hide="playlist">
