@@ -191,7 +191,6 @@ choutubeApp.controller('VideosController', function ($scope, $http, $log, Videos
     $scope.launch = function (id, title, idx) {
       VideosService.launchPlayer(id, title);
       VideosService.archiveVideo(id, title);
-      //VideosService.deleteVideo($scope.upcoming, id);
       VideosService.getYoutube().playIdx = idx;
       
       $log.info('Launched id:' + id + ' and title:' + title);
@@ -199,18 +198,17 @@ choutubeApp.controller('VideosController', function ($scope, $http, $log, Videos
 
     $scope.queue = function (id, title) {
       VideosService.queueVideo(id, title);
-      //VideosService.deleteVideo($scope.history, id);
       $log.info('Queued id:' + id + ' and title:' + title);
     };
 
     $scope.delete = function (list, id) {
-      VideosService.deleteVideo(list, id);
+      VideosService.deleteVideo($scope.upcoming, id);
     };
 
     $scope.search = function () {
       $http.get('https://www.googleapis.com/youtube/v3/search', {
         params: {
-          key: 'AIzaSyCx_-DPip0Gt6lXn6ixuKczI7EXAyc2tIE',
+          key: 'AIzaSyCcXyPQpQ79ay56baFrmEDFTKPgUv9TSZw',
           type: 'video',
           maxResults: '20',
           part: 'id,snippet',

@@ -15,31 +15,28 @@
  */
 package com.bigcho.mps.entity;
 
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="tbl_youtube")
-public class Youtube {
+@Table(name="tbl_album")
+public class Album {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
 	@Column
-	private String playId;
-	
-	@Column
 	private String title;
 	
-	@ManyToOne(fetch=FetchType.LAZY, optional=false)
-	@JoinColumn(name="albumId")
-	private Album album;
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="album")
+	private Set<Youtube> youtubes;
 }
